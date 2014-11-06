@@ -5,8 +5,5 @@ server.init(io.sockets);
 
 io.on('connection', function(socket) {
     console.log("New client connected. Id: " + socket.id);
-    server.addplayerAuthSocketEvents(socket);
+    server.addPlayerAuthSocketEvents(socket);
 });
-
-
-
